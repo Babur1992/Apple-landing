@@ -1,0 +1,80 @@
+/* ================(max-width: 730px)================= */
+
+@media screen and (max-width: 730px) {
+  .navbar-search {
+    display: none;
+  }
+
+  .menu-list {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    overflow: auto;
+    padding: 50px 40px;
+  }
+  .menu-list {
+    flex-direction: column;
+    row-gap: 1px;
+  }
+  .title-hero {
+    font-size: 3rem;
+  }
+}
+
+/* ======== (max-width: 1015px)=======*/
+
+@media screen and (max-width: 1015px) {
+  .img-title {
+    font-size: 12px;
+  }
+  .title-airPodsMax {
+    font-size: 90px;
+  }
+  .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+  }
+  .footer-icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* ===============(min-width: 730px)=========== */
+
+@media screen and (min-width: 730px) {
+  .burger {
+    display: none;
+    top: 150px;
+    left: 150px;
+
+  }
+ 
+}
+@media screen and (max-width: 730px) {
+  .title-airPodsMax {
+    font-size: 70px;
+  }
+  .footer-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+   .button-airpods {
+    bottom: -80px;
+    left: 39%;
+  }
+}

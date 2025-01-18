@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.open {
+  display: flex !important;
+}
+.burger {
+  cursor: pointer;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  right: 50px;
+  top: 5px;
+  width: 30px;
+  height: 12px;
+
+  position: relative;
+
+  z-index: 3;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+
+  transition-duration: 200ms;
+}
+.span {
+  height: 2px;
+  width: 80%;
+  background-color: #fff;
+
+  transform: scale(1) all;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger.active span {
+  transform: scale(0);
+}
+.burger.active::before {
+  transition-duration: 200ms;
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.burger.active::after {
+  transition-duration: 200ms;
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+.header {
+  font-family: "Regular" sans-serif;
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 83px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 0;
+}
+.menu-item {
+  padding: 17px 0;
+}
+
+.menu-link {
+  padding: 9px 0;
+  color: #fff;
+}
+.navbar-search {
+  display: flex;
+  gap: 42px;
+}
+.img-header {
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.hero {
+  background-image: url(../image/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 600px;
+  width: auto;
+}
+.title-hero {
+  text-align: center;
+  font-family: "Outside", sans-serif;
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.title-text {
+  font-family: "Bold", sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.buttons-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 83px;
+}
+.button-buy {
+  width: 140px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  font-family: "Regular", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  border: solid #3946af 1px;
+  background-color: black;
+
+  transition-duration: 1s;
+  border-radius: 50px;
+}
+.button-buy:hover {
+  background-color: #3946af;
+  transition-duration: 2s;
+}
+.section-macbook {
+  background-color: #fff;
+  max-width: 1280px;
+  height: auto;
+}
+.title-macbook {
+  padding-top: 101px;
+  margin-bottom: 47px;
+  text-align: center;
+  font-family: "Bold", sans-serif;
+  font-size: 35px;
+}
+.macbok-list-btn {
+  margin-bottom: 53px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  cursor: pointer;
+}
+.btn-macbook {
+  cursor: pointer;
+  font-family: "Bold", sans-serif;
+  font-size: 22px;
+  border: none;
+  background-color: #fff;
+}
+
+.btn-decktop {
+  cursor: pointer;
+  font-family: "Bold", sans-serif;
+  font-size: 22px;
+  border: none;
+  background-color: #fff;
+}
+.gallery-desctop{
+  display: none;
+ 
+}
+.img-gallery {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.img {
+  width: 198px;
+  height: 164px;
+}
+.img-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 33px;
+}
+.img-price {
+  font-family: "Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.btn-img {
+  cursor: pointer;
+  color: #3946af;
+  font-family: "Regular", sans-serif;
+  font-size: 14px;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #fff;
+  border: none;
+  outline: #3946af solid 1px;
+  transition-duration: 1s;
+}
+.btn-img:hover {
+  color: #fff;
+  transition-duration: 1s;
+  background-color: #3946af;
+}
+
+.image-airpods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: auto;
+  background-color: black;
+}
+
+.img-aipods {
+  width: 130px;
+}
+.airPodsMax {
+  background-image: url(../image/image-airPodsMax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  max-width: 1280px;
+  height: 720px;
+  position: relative;
+}
+.title-airPodsMax {
+  font-family: "Bold", sans-serif;
+  font-size: 127px;
+
+  text-align: center;
+  padding-top: 25%;
+  margin-bottom: 256px;
+}
+
+.btn-airPodsMax {
+  background-color: #3946af;
+}
+
+.button-airpods {
+  width: 140px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  font-family: "Regular", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  border: solid #3946af 1px;
+  background: none;
+
+  transition-duration: 1s;
+  border-radius: 50px;
+  position: relative;
+  bottom: 150px;
+  left: 34%;
+}
+.button-airpods:hover {
+  background-color: #3946af;
+  transition-duration: 1s;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #fff;
+  cursor: pointer;
+}
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  width: 100%;
+
+  padding: 10px 0;
+}
+ul li {
+  margin-left: 10px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-left: 10px;
+  font-family: "Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition-duration: 2s;
+}
+
+ul li a {
+  font-family: "Regular", sans-serif;
+  font-size: 17px;
+  color: black;
+}
+
+.footer-icon-list {
+  display: flex;
+}
+
+a:hover {
+  color: #3946af;
+}
+.footer-icon {
+  fill: black;
+}
